@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reservation Form</title>
 </head>
 <body>
+    <h1>Travel reservation form</h1>
+    <h3>* denotes mandotory</h3>
+    <form action="/action_page.php" method="get">
+        <!-- FirstName LastName -->
+        <label for="fullName">Full name*:</label><br>
+        <input type="text" id="fullName" name="fullName" placeholder="FirstName LastName" required><br>
+
+        <!-- Email Address -->
+        <label for="emailAddress">Email address*:</label><br>
+        <input type="email" id="emailAddress" name="emailAddress" placeholder="EMAIL_ADDRESS" required><br>
+
+        <!-- Tour Package -->
+        <label for="tourPackage">Select Tour Package*:</label><br>
+        <select id="tourPackage" name="tourPackage" required>
+            <option value="">--Select--</option>
+            <option value="platinum">Platinum</option>
+            <option value="gold">Gold</option>
+            <option value="silver">Silver</option>
+        </select><br>
+
+        <!-- Arrival Date -->
+        <label for ="arrivalDate">Arrival date*:</label><br>
+        <input type="date" id="arrivalDate" name="arrivalDate" placeholder="YYYY-MM-DD" required><br>
+
+        <!-- Number of Person -->
+        <label for ="numberPerson">Number of person*:</label><br>
+        <input type="number" id="numberPerson" name="numberPerson" placeholder="UNKNOWN_TYPE" required><br>
+
+        <!-- What woukd you want to avail? -->
+        <label for ="avail">What would you want to avail?*</label><br>
+        <label for ="boarding">Boarding</label>
+        <input type="checkbox" id="boarding" name="boarding" value="Boarding" checked><br>
+        <label for="fooding">Fooding</label>
+        <input type="checkbox" id="fooding" name="fooding" value="Fooding"><br>
+        <label for="seeing">Sight seeing</label>
+        <input type="checkbox" id="seeing" name="seeing" value="Sight seeing"><br>
+
+        <!-- Discout Coupon Code -->
+        <label for="discountCoupon">Discout Coupon code:</label><br>
+        <input type="text" id="discountCoupon" name="discountCoupon" placeholder="UNKNOWN_TYPE"><br>
+    
+        <!-- Terms and Conditions -->
+        <label for="termCondition">Terms and conditions*</label><br>
+        <input type="radio" id="termCondition_1" name="termCondition" value="I agree" required>
+        <label for="termCondition_1">I agree</label>
+        <input type="radio" id="termCondition_2" name="termCondition" value="I disagree" required>
+        <label for="termCondition_2">I disagree</label><br>
+
+        <!-- Submit -->
+        <input type="submit" id="submit" name="submit" value="Complete reservation">
+
+    </form>
+    
+
     
 </body>
 </html>
