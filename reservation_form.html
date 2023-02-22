@@ -11,47 +11,65 @@
     <h3>* denotes mandotory</h3>
     <form action="/action_page.php" method="get">
         <!-- FirstName LastName -->
+        <div>
         <label for="fullName">Full name*:</label><br>
-        <input type="text" id="fullName" name="fullName" placeholder="FirstName LastName" required><br><br>
+        <input type="text" id="fullName" name="fullName" placeholder="FirstName LastName" required>
+        </div>
 
         <!-- Email Address -->
+        <div>
         <label for="emailAddress">Email address*:</label><br>
-        <input type="email" id="emailAddress" name="emailAddress" placeholder="EMAIL_ADDRESS" required><br><br>
+        <input type="email" id="emailAddress" name="emailAddress" placeholder="EMAIL_ADDRESS" required>
+        </div>
 
         <!-- Tour Package -->
+        <div>
         <label for="tourPackage">Select Tour Package*:</label><br>
         <select id="tourPackage" name="tourPackage" required>
             <option value="">--Select--</option>
             <option value="platinum">Platinum</option>
             <option value="gold">Gold</option>
             <option value="silver">Silver</option>
-        </select><br><br>
+        </select>
+        </div>
 
         <!-- Arrival Date -->
+        <div>
         <label for ="arrivalDate">Arrival date*:</label><br>
-        <input type="date" id="arrivalDate" name="arrivalDate" placeholder="YYYY-MM-DD" required><br><br>
+        <input type="date" id="arrivalDate" name="arrivalDate" placeholder="YYYY-MM-DD" required>
+        </div>
 
         <!-- Number of Person -->
+        <div>
         <label for ="numberPerson">Number of person*:</label><br>
-        <input type="number" id="numberPerson" name="numberPerson" placeholder="UNKNOWN_TYPE" required><br><br>
+        <input type="number" id="numberPerson" name="numberPerson" placeholder="UNKNOWN_TYPE" required>
+        </div>
 
         <!-- What woukd you want to avail? -->
+        <div>
         <label for ="avail">What would you want to avail?*</label><br>
         <label><input type="checkbox" id="boarding" name="boarding" value="Boarding" checked>Boarding</label><br>
         <label><input type="checkbox" id="fooding" name="fooding" value="Fooding">Fooding</label><br>
-        <label><input type="checkbox" id="seeing" name="seeing" value="Sight seeing">Sight seeing</label><br><br>
+        <label><input type="checkbox" id="seeing" name="seeing" value="Sight seeing">Sight seeing</label>
+        </div>
 
         <!-- Discout Coupon Code -->
+        <div>
         <label for="discountCoupon">Discout Coupon code:</label><br>
-        <input type="text" id="discountCoupon" name="discountCoupon" placeholder="UNKNOWN_TYPE"><br><br>
+        <input type="text" id="discountCoupon" name="discountCoupon" placeholder="UNKNOWN_TYPE">
+        </div>
     
         <!-- Terms and Conditions -->
+        <div>
         <label for="termCondition">Terms and conditions*</label><br>
         <label><input type="radio" id="termCondition_1" name="termCondition" value="I agree" required>I agree</label>
-        <label><input type="radio" id="termCondition_2" name="termCondition" value="I disagree" required>I disagree</label><br><br>
+        <label><input type="radio" id="termCondition_2" name="termCondition" value="I disagree" required>I disagree</label>
+        </div>
 
         <!-- Submit -->
+        <div>
         <input type="submit" id="submit" name="submit" value="Complete reservation">
+        </div>
 
     </form>
     
